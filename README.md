@@ -4,6 +4,7 @@
     + 業務フロー図
     + 画面遷移図
     + ＥＲ図
+    + CRUD図
     + ジョブフロー図
 
 - 一覧
@@ -12,7 +13,10 @@
     + 機能一覧
     + 画面一覧
     + 帳票一覧
+    + PGM一覧
+    + JOB一覧
     + テーブル一覧
+    + ファイル一覧
 
 
 ### :computer: Progaming Language 基本構文比較表
@@ -52,7 +56,9 @@
 - [SQL Server](https://github.com/sixsGod/study/tree/master/sql/SQL%20Server)
 
 |功能语法|Oracle|Mysql|PostgreSQL|DB2|SQL Server|
-|-|-|-|-|-|-|
+|Linux安装|-|-|-|-|-|
+|服务启动|-|-|-|-|-|
+|数据库创建|-|-|-|-|-|
 |-|-|-|-|-|-|
 |コメント|// コメント|// コメント|# コメント|-|
 
