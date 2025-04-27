@@ -22,6 +22,7 @@ docker rmi `docker images -q` # delete all
 
 - 容器命令
 ```sh
+# 新建并启动容器
 docker run -it --name=c1 softname:version /bin/bash
            参数  容器名 =可以用空格
            -t分配终端 -i表示保持容器运行
@@ -29,11 +30,14 @@ docker run -it --name=c1 softname:version /bin/bash
                要用docker exec -it [c2] /bin/bash 
 exit
 
-docker ps -a # 查看运行中容器
+# 启动已有的容器
+docker exec -it c1 /bin/bash
+
+# 查看运行中容器
+docker ps -a 
 docker stop [c2]
 docker start [c2]
-docker rm [c1]
-    不能删除正在运行的容器
+docker rm [c1]   # 不能删除正在运行的容器
 docker inspect # 查看容器信息
 ```
 
