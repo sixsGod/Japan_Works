@@ -12,8 +12,8 @@ systemctl enable docker
 - 镜像命令
 ```sh
 docker images # images list
-docker search [softname] # search images
-docker pull [softname:version] # latest
+docker search [镜像名称] # search images
+docker pull [镜像名称：版本号] # latest
 docker rmi [image id] 
        rm-> remove 
          i-> image
