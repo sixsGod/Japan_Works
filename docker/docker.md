@@ -1,7 +1,7 @@
 ## docker命令
 
 - 服务的启动与关闭
-```bash
+```sh
 systemctl start docker  
 systemctl status docker
 systemctl stop docker
@@ -10,7 +10,7 @@ systemctl enable docker
 ```
 
 - 镜像命令
-```bash
+```sh
 docker images # images list
 docker search [softname] # search images
 docker pull [softname:version] # latest
@@ -21,7 +21,7 @@ docker rmi `docker images -q` # delete all
 ```
 
 - 容器命令
-```bash
+```sh
 docker run -it --name=c1 softname:version /bin/bash
            参数  容器名 =可以用空格
            -t分配终端 -i表示保持容器运行
@@ -39,13 +39,13 @@ docker inspect # 查看容器信息
 
 ## 数据卷用来解决数据互通
 - 数据卷
-```bash
+```sh
 docker run -it --name=c1 -v /root/data:/root/data_container softname:version /bin/bash
                          -v 数据卷 宿主目录不存在则创建：容器目录
 ```
 
 - 数据卷容器
-```bash
+```sh
 1.docker run -it --name=c3 -v /volume softname:version /bin/bash
                             /volume方式实现 c3数据卷容器
 # c1,c2分别挂载到c3数据卷容器
@@ -60,7 +60,7 @@ docker run -it --name=c1 -v /root/data:/root/data_container softname:version /bi
 4. oper container [softname]
 
 - mysql部署:
-```bash
+```sh
 mkdir mysql
 cd mysql
 
