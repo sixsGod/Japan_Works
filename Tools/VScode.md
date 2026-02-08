@@ -6,6 +6,7 @@
 |-|-|
 |打开命令面板|Ctrl + Shift + P|
 |打开键盘快捷键|Ctrl + K, Ctrl + S|
+|打开主题选择器|Ctrl + K, Ctrl + T|
 |打开设置|Ctrl + ,|
 |打开终端|	Ctrl + `|
 |快速打开，转到文件|	Ctrl + P|
